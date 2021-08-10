@@ -1,0 +1,37 @@
+/**
+  EDgrid es una librería CSS para construir layouts con Responsive Web Design
+  Importe este archivo en su proyecto para empezar a usarlo
+**/
+
+// Variables globales (puede sobreescribirlas antes de importar ED grid)
+// No las sobreescriba aquí, sino desde su proyecto.
+  $cssCore    : true  !default;
+  $cssHelpers : true  !default;
+
+// Selectores (clases) para flex-container y flex-item
+  $container : container !default;
+  $item      : item !default;
+
+// Ancho máximo para los contenedores
+  $max-width : 1200px !default;
+
+
+// Seperación horizontal entre items (*2)
+  $gutter : em(15px) !default;
+
+// Breakpoints
+  $breakpoints : (
+    s  : 360px,
+    m  : 480px,
+    md : 768px,
+    l  : 1024px,
+    xl : 1440px
+  ) !default;
+
+// Fracciones para calcular anchos de los items
+  $fractions : 3 6 !default;
+
+// Importar componentes
+@import "components/media-queries";   // mixins from(), to(), fromTo()
+@import "components/helpers";         // utilidades
+@import "components/core";            // core de EDgrid (containers y items)
