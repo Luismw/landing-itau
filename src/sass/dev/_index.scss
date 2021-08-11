@@ -114,6 +114,7 @@ body{
                     @include to(420px){
                         max-width: 200px;
                         margin: 0 auto;
+                        font-size: 18px;
                     }
                 }
                 .grid{
@@ -162,8 +163,8 @@ body{
                     font-size: 24px;
                     text-align: center;
 
-                    @include to(380px){
-                        font-size: 22px;
+                    @include to(m){
+                        font-size: 20px;
                     }
                 }
             }
@@ -649,7 +650,10 @@ body{
         }
         .block10{
             padding: 0 20px;
-            display: none;
+
+            @include to(m){
+                padding: 0 15px;
+            }
     
             .box{
                 display: flex;
@@ -658,15 +662,34 @@ body{
                 .icon{
                     width: 150px;
                     text-align: center;
+
+                    @include to(520px){
+                        width: 130px;
+                    }
+                    @include to(450px){
+                        width: 70px;
+                        text-align: left;
+                    }
         
                     p{
                         color: $first-color;
                         font-weight: 700;
                         padding-bottom: 20px;
+
+                        @include to(450px){
+                            font-size: 15px;
+                        }
                     }
                     img{
                         width: 70px;
                         display: inline-block;
+
+                        @include to(520px){
+                            max-width: 50px;
+                        }
+                        @include to(450px){
+                            width: 40px;
+                        }
                     }
                 }
                 .percentage{
@@ -674,24 +697,83 @@ body{
                     padding-top: 35px;
                     display: flex;
                     align-items: center;
+
+                    @include to(600px){
+                        width: 250px;
+                    }
+                    @include to(520px){
+                        width: 220px;
+                    }
+                    @include to(400px){
+                        width: 190px;
+                    }
+                    @include to(390px){
+                        padding-top: 40px;
+                    }
+                    @include to(380px){
+                        width: 180px;
+                    }
         
                     img{
                         width: 90px;
+
+                        @include to(520px){
+                            max-width: 70px;
+                        }
+                        @include to(380px){
+                            max-width: 65px;
+                        }
+                        @include to(340px){
+                            max-width: 60px;
+                        }
                     }
                     p{
                         font-size: 14px;
                         padding-left: 20px;
+
+                        @include to(520px){
+                            padding: 0 5px 0 10px;
+                        }
+                        @include to(m){
+                            font-size: 13px;
+                        }
+                        @include to(380px){
+                            font-size: 12px;
+                        }
     
                         span{
                             color: $first-color;
                             font-size: 16px;
                             display: block;
+
+                            @include to(m){
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
                 .stores{
                     width: calc(100% - 400px);
                     padding-top: 70px;
+
+                    @include to(600px){
+                        width: calc(100% - 400px);
+                    }
+                    @include to(520px){
+                        width: calc(100% - 350px);
+                    }
+                    @include to(450px){
+                        width: calc(100% - 290px);
+                    }
+                    @include to(400px){
+                        width: calc(100% - 260px);
+                    }
+                    @include to(390px){
+                        padding-top: 60px;
+                    }
+                    @include to(380px){
+                        width: calc(100% - 250px);
+                    }
                     
                     img{
                         width: 100%;
