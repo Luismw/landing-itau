@@ -8,10 +8,12 @@ $negro:      	#000000;
 $negro2:        #333333;
 $blanco:     	#ffffff;
 $text:       	#595959;
-$plomo : 		#F4F4F4; 
+$plomo : 		#EAEAEA; 
 
 // Colores de la paleta 
 $first-color: #EC7000;
+
+$font-title: "Itau";
 
 
 // Añadir librerias base para el funcionamiento y diseño del sitio web
@@ -23,3 +25,4 @@ $first-color: #EC7000;
 
 // Archivos dev
 @import 'dev/globals';
+@import 'dev/index';
