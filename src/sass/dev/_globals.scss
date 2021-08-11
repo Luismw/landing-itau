@@ -18,3 +18,89 @@
 ::-webkit-scrollbar-button {
     // background: rgba($text,.8);
 }
+
+.modal-terms{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    transform: scale(0);
+    background-color: rgba($negro,.3);
+    padding: 10px 1em;
+    display: flex;
+    align-items: center;
+    
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+        z-index: 999;
+    }
+
+    .content{
+        text-align: center;
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+        background: $plomo;
+        position: relative;
+        color: $negro;
+        overflow-y: scroll;
+        height: 500px;
+        border-radius: 5px;
+
+        .close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: $first-color;
+            color: $blanco;
+            border: none;
+            outline: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+        h3,
+        h4{
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+        h3{
+            margin-top: 1.2em;
+            margin-bottom: 15px;
+
+            @include to(m){
+                text-align: left;
+                margin-top: 40px;
+            }
+        }
+        h4{
+            font-size: 16px;
+            text-align: left;
+        }
+        p{
+            color: $text;
+            font-size: 14.5px;
+            margin-bottom: 1em;
+            text-align: left;
+            line-height: 1.4;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

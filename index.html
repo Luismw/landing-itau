@@ -13,7 +13,7 @@
         Clase que se aplica al body para mostrar las diferentes pantallas
         | credito | debito | credito_debito
     -->
-    <body class="credito_debito"> 
+    <body class="credito"> 
         <div class="wrap-container">
             <div class="banner">
                 <img src="assets/img/logo.png" alt="Itaú" class="logo">
@@ -170,11 +170,35 @@
                 Ver más en
                 <img src="assets/img/tumundo.svg" alt="Ver más en tumundo">
             </a>
-            <a href="#" class="btn-terms">Ver términos y condiciones</a>
+            <p class="btn-terms">Ver términos y condiciones</p>
             <p class="text-extra">
                 *CFTNA: 0,0% CFTNA = COSTO FINANCIERO TASA NOMINAL ANUAL 0.00%. TASA EFECTIVA ANUAL 0,00% TASA NOMINAL ANUAL 0.00%. CARTERA CONSUMO. Promoción válida en todo el territorio de la República Argentina del 01/08/2021 al 31/08/2021 sobre los precios de contado. Promoción exclusiva para clientes que posean tarjetas de crédito y/o Débito Visa y/o Mastercard emitidas por Banco Itaú Argentina S.A. (1) Promoción Cabify: Promoción exclusiva para clientes que posean tarjetas de crédito y/o Débito Visa y/o Mastercard emitidas por Banco Itaú Argentina S.A. Promoción válida jueves y viernes. 30% de descuento y tope mensual de $800, sobre compras abonadas exclusivamente a través de la aplicación de Cabify. Para acceder al beneficio el cliente deberá asociar su tarjeta de débito y/o crédito de Itaú en la App de Cabify, y seleccionarla como método de pago antes de solicitar un viaje. (2) Promoción Rappi: 30% de descuento y tope mensual de $800 sobre compras abonadas exclusivamente a través de la aplicación de Rappi. Beneficio válido para las plazas de: CABA, GBA, La Plata (Buenos Aires), Mar del Plata (Buenos Aires), Bahía Blanca (Buenos Aires), Córdoba (Córdoba), Santa Fé (capital), Rosario (Santa Fé), Tucumán centro (Tucumán), Yerba Buena (Tucumán), Mendoza (capital), Salta (capital), Neuquén (capital). Beneficio válido exclusivamente para para las verticales de restaurant, supermercados, farmacias, tiendas especializadas, licores y kiosco. Banco Itaú solo es el medio de pago para la adquisición del producto/servicio contratado a través de la aplicación de Rappi. El proveedor es el exclusivo responsable por la prestación, correcto funcionamiento y/o modificaciones en el servicio. El beneficio aplica exclusivamente para la compra y entrega del pedido en el mismo día en el cual aplica el beneficio. (3) Beat: Promoción válida los días jueves y viernes. 30% de descuento y tope mensual de $800, sobre compras abonadas exclusivamente a través de la aplicación de Beat. Para acceder al beneficio el cliente deberá asociar su tarjeta de débito y/o crédito de Itaú en la App de Beat, y seleccionarla como método de pago antes de solicitar un viaje. (4) Pedidos Ya:  30% de descuento y tope mensual de $800 sobre compras abonadas exclusivamente a través de la aplicación de Pedidos Ya. El beneficio aplica exclusivamente para la compra y entrega del pedido en el mismo día. Banco Itaú solo es el medio de pago para la adquisición del producto/servicio contratado a través de la aplicación de Pedidos Ya. El proveedor es el exclusivo responsable por la prestación, correcto funcionamiento y/o modificaciones en el servicio. (5) Indumentaria: Promoción válida los días martes sobre los precios de contado abonando con tarjetas de crédito Visa y/o Mastercard emitidas por Banco Itaú Argentina S.A. 15% sin tope de reintegro aplicable en hasta 3 cuotas fijas sin interés. Consultar marcas y locales adheridos en: tumundo.itau.com.ar (6) Gastronomía: 25% sobre los precios de lista con tope de reintegro total promoción $1.000 aplicable los días jueves y viernes. Consultar marcas y locales adheridos en: tumundo.itau.com.ar . (7) Bicicleterias: 35% tope de reintegro total promoción $4.000, aplicable en hasta 3 cuotas fijas sin interés. Consultar marcas y locales adheridos en: tumundo.itau.com.ar // Ejemplo: Para una compra de $1.000, con un descuento del 15% en 3 cuotas* el valor de cada cuota* será de $333,33 y el reintegro será de $150. // El tope de reintegro es por cada tarjeta de crédito y/o débito Visa y/o Mastercard titular (corresponde a la sumatoria de las compras efectuadas por el titular de tarjeta de crédito, y sus adicionales en todas las marcas participantes durante el período de la promoción). En el caso de tarjeta de débito, el tope es mensual, y por cuenta del titular. // Los importes bonificados por las compras realizadas con las tarjetas de crédito emitidas por Banco Itaú Argentina S.A. se acreditarán en el mismo resumen en que ingresa el consumo, o en el resumen subsiguiente. Los importes bonificados por las compras realizadas con las Tarjetas de Débito Itaú se acreditarán dentro de los 20 días hábiles de realizada la compra. // No es combinable ni acumulable con otras ofertas y/o promociones. La promoción no aplica a pagos a través de billeteras virtuales (excepto Modo), plataformas de pago y/o portales de pagos online ajenos a la empresa. No aplica para pago electrónico inmediato (PEI), transferencias 3.0 ni tarjetas emitidas a través del Proyecto Anses-Asignación por Hijo. Los planes Ahora 3, 6,12 y 18 no son acumulables con las promociones bancarias. Quedan excluidas las compras realizadas con tarjetas corporativas. // Banco Itaú Argentina es una sociedad anónima según la ley argentina, sus accionistas responden por las operaciones del banco, sólo hasta la integración de las acciones suscriptas (Ley 25.738).
             </p>
             <p class="unsubscribe">Para desuscribirte <a href="#">haz click aquí.</a></p>
         </div>
+
+        <!-- Modal términos y condiciones -->
+        <div class="modal-terms">
+            <div class="content">
+                <button class="close">X</button>
+                <h3>Términos y Condiciones</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium pariatur nemo debitis amet eaque animi. Distinctio molestias a error, similique mollitia ratione, fugit quibusdam perferendis aliquam ipsa quisquam possimus culpa praesentium consequuntur cupiditate omnis tenetur. Reiciendis saepe delectus autem. Sed doloribus magnam esse est quidem suscipit illum soluta unde eum reiciendis, minus quae alias voluptates natus, ipsam doloremque temporibus error.</p>
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repellendus molestias maxime. Perspiciatis rem quo quidem placeat earum quibusdam veniam, ipsam velit facilis. Incidunt velit consequatur corporis, voluptatem sed delectus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repellendus molestias maxime. Perspiciatis rem quo quidem placeat earum quibusdam veniam, ipsam velit facilis. Incidunt velit consequatur corporis, voluptatem sed delectus.</p>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+			$(".btn-terms").on("click", function(){
+				$(".modal-terms").addClass("active");
+			});
+
+			$(".modal-terms .close").on("click", function(){
+				$(".modal-terms").removeClass("active");
+			});
+        </script>
     </body>
 </html>
